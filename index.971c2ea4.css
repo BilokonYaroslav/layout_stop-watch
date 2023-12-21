@@ -1,0 +1,53 @@
+@keyframes rotate {
+  from {
+    transform: translateY(-50%)rotate(0);
+  }
+
+  to {
+    transform: translateY(-50%)rotate(360deg);
+  }
+}
+
+.watch {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.watch__circle {
+  border: 2px solid #000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+}
+
+.watch__center {
+  z-index: 1;
+  background-color: #817f7f;
+  border-radius: 50%;
+  width: 4vmin;
+  height: 4vmin;
+}
+
+.watch__big-hand {
+  transform-origin: bottom;
+  background-color: #524343;
+  width: 2.66667vmin;
+  height: 26.6667vmin;
+  animation: 60s linear infinite rotate;
+  position: absolute;
+}
+
+.watch__small-hand {
+  transform-origin: bottom;
+  background-color: #771010;
+  width: 1.6vmin;
+  height: 38.0952vmin;
+  animation: 5s linear infinite rotate;
+  position: absolute;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
